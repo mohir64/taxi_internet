@@ -1,15 +1,31 @@
-# Uber clone with Flutter app
+# Taxi Internet
 
-An Uber clone app for Android and iOS built with Flutter and Supabase. A user can find a nearby driver, confirm the fare, and track the driver's location in real-time. Once a driver is found, you can simulate a driver by running the scripts in the `scripts/dart` folder.
+این پروژه یک اپلیکیشن موبایل برای شبیه‌سازی سرویس تاکسی اینترنتی است که با استفاده از Flutter توسعه داده شده است. کاربران می‌توانند مقصد خود را مشخص کنند، هزینه سفر را مشاهده کرده و راننده‌ای نزدیک پیدا کنند. اپلیکیشن از Supabase برای مدیریت داده‌ها و Google Maps برای نمایش نقشه و مسیر استفاده می‌کند.
 
-Watch the full video guide on how to build this app: https://youtu.be/cL4pVpaOH9o
+---
 
-## Setup the environment
+## ویژگی‌ها
+- **انتخاب مقصد:** کاربران می‌توانند با استفاده از نقشه مقصد خود را مشخص کنند.
+- **محاسبه هزینه:** هزینه سفر بر اساس زمان تخمینی مسیر محاسبه می‌شود.
+- **پیدا کردن راننده:** نزدیک‌ترین راننده پیدا می‌شود و مسیر راننده به سمت مبدا نمایش داده می‌شود.
+- **احراز هویت ناشناس:** با استفاده از Supabase، کاربران می‌توانند بدون نیاز به ثبت‌نام، وارد برنامه شوند.
+- **ردیابی لحظه‌ای:** کاربران می‌توانند موقعیت راننده را به صورت زنده روی نقشه مشاهده کنند.
+- **هشدار و مدیریت مجوز مکان:** برنامه از کاربران درخواست مجوز دسترسی به مکان می‌کند و در صورت غیرفعال بودن GPS، آن را مدیریت می‌کند.
 
-- Open `flutter/lib/main.dart` and replace the `SUPABASE_URL` and `SUPABASE_ANON_KEY` in the `Supabase.initialize()` call with your own Supabase URL and anon key.
-- Opne `flutter/android/app/src/main/AndroidManifest.xml` and replace `YOUR_GOOGLE_MAP_API_KEY` with your own Google Maps API key.
-- Open `flutter/ios/Runner/AppDelegate.swift` and replace `YOUR_GOOGLE_MAP_API_KEY` with your own Google Maps API key.
+---
 
-## Usage
+## پیش‌نیازها
+برای اجرای پروژه به موارد زیر نیاز دارید:
+- Flutter SDK (نسخه 3.10 یا بالاتر)
+- حساب کاربری Supabase برای دریافت URL و anonKey
+- کلید API از Google Maps برای نمایش نقشه و مسیریابی
+- یک ویرایشگر کد مثل VSCode یا Android Studio
 
-Run the app from the IDE or by running `flutter run` in the terminal.
+---
+
+## نصب و راه‌اندازی
+برای اجرای این پروژه مراحل زیر را دنبال کنید:
+
+1. **مخزن را کلون کنید:**
+   ```bash
+   git clone https://github.com/mohir64/taxi_internet.git
