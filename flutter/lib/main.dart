@@ -119,7 +119,7 @@ class UberCloneMainScreenState extends State<UberCloneMainScreen> {
   LatLng? _currentLocation;
   final Set<Polyline> _polylines = {};
   final Set<Marker> _markers = {};
-
+  
   /// Fare in cents
   int? _fare;
   StreamSubscription<dynamic>? _driverSubscription;
