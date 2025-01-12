@@ -8,7 +8,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
+ 
 void main() async {
   await Supabase.initialize(
     url: 'SUPABASE_URL',
